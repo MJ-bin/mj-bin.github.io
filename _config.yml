@@ -213,7 +213,6 @@ exclude:
   - "Gemfile.lock"
   - "README.md"
   - "post.c"
-  - "post"
   - "templates"
   - docs
   - tools
