@@ -1,0 +1,13 @@
+{% assign hit_url = site.url
+  | remove_first: 'https://'
+  | remove_first: 'http://'
+  | append: page.url
+%}
+
+<a href="https://hits.sh/{{ hit_url }}/" target="_blank" rel="noopener">
+  <img
+    alt="Hits"
+    style="border: 0; margin: 0;"
+    src="https://hits.sh/{{ hit_url }}.svg?view=today-total&label=views"
+  />
+</a>
