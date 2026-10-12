@@ -23,6 +23,18 @@
 - `post.c`: 게시글 생성과 삭제를 돕는 CLI 도구
 - `.github/workflows/pages-deploy.yml`: GitHub Pages 배포 workflow
 
+## 로컬 미리보기
+
+Ruby와 Bundler가 설치된 환경에서 저장소 루트의 스크립트를 실행한다.
+
+```bash
+./test.sh
+```
+
+첫 실행에서는 필요한 gem을 `vendor/bundle`에 설치한다. 빌드가 완료되면 터미널에 표시되는 `http://localhost:4000/`에 접속한다. 글을 저장하면 자동으로 다시 빌드되며, 브라우저를 새로고침하면 확인할 수 있다. 미래 날짜의 글과 `_drafts` 글도 미리보기에 포함된다. 종료는 `Ctrl+C`다.
+
+다른 포트를 사용하려면 `PORT=4001 ./test.sh`로 실행한다.
+
 ## `post.c` 사용법
 
 먼저 C 소스를 컴파일한다.
